@@ -77,6 +77,10 @@ server {
     location ~ \.php$ {
         include snippets/fastcgi-php.conf;
         fastcgi_pass php_upstream;
+        
+        if ($request_method ~* "(GET|POST|PUT)") {
+			add_header "Access-Control-Allow-Origin" *;
+		}
     }
 	
     charset utf-8;
