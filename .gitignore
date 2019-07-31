@@ -1,10 +1,5 @@
 pasback/app/config/config.php
 pasback/vendor/
 
-pasfront/node_modules
-pasfront/dist
-pasfront/.env.local
-pasfront/.env.*.local
-pasfront/npm-debug.log*
-pasfront/yarn-debug.log*
-pasfront/yarn-error.log*
+pasfront/node_modules/
+pasfront/dist/
